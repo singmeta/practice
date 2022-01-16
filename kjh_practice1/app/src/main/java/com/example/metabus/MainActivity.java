@@ -62,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // +추가> 주소 입력창 (주소 입력 -> 키보드 엔터 -> 해당 웹사이트 접속)
+        //helloworld
+
+
         urlEt = findViewById(R.id.urlEt);
         urlEt.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
