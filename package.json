@@ -19,7 +19,10 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "mongodb": "^4.1.1",
-    "mongoose": "^6.1.7"
+    "mongoose": "^6.1.7",
+    "phaser": "^3.55.2",
+    "phaser-matter-collision-plugin": "^1.0.0",
+    "phaser3-project-template": "^1.0.9"
   },
   "prettier": {
     "semi": true

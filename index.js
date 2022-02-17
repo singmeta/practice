@@ -14,7 +14,9 @@ const client = new MongoClient(uri, {
 
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3005;
+
+app.use("/static", express.static("phaser3"));
 
 // monogo db write 라우트  - Neapolitan pizza , round를 몽고디비에 collection.insertOne을 통해서 입력시켜준다
 app.get("/write", (req, res) => {
@@ -48,7 +50,8 @@ app.get("/read", (req, res) => {
     await console.log("helloworld");
     // perform actions on the collection object
 
-    client.close();
+    await client.close();
+    return await allValues;
   });
 });
 
